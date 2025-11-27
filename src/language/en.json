@@ -1,0 +1,11 @@
+{
+    "home": {
+        "header": {
+            "home_nav_link": "home",
+            "contact_nav_link": "contact",
+            "about_nav_link": "About",
+            "signUp_nav_link": "Sign Up",
+            "input_placeholder": "What are you looking for?"
+        }
+    }
+}

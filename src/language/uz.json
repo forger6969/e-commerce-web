@@ -1,0 +1,11 @@
+{
+    "home": {
+        "header": {
+            "home_nav_link": "Bosh sahifa",
+            "contact_nav_link": "Aloqa",
+            "about_nav_link": "Biz haqimizda",
+            "signUp_nav_link": "Ro‘yxatdan o‘tish",
+            "input_placeholder": "Nimani xarid qilmoqchisiz?"
+        }
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "home": {
+        "header": {
+            "home_nav_link": "Главная",
+            "contact_nav_link": "Контакты",
+            "about_nav_link": "О нас",
+            "signUp_nav_link": "Зарегистрироваться",
+            "input_placeholder": "Что вы хотите купить?"
+        }
+    }
+}
