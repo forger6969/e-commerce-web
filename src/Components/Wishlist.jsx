@@ -10,7 +10,7 @@ export default function Wishlist() {
 
   if (wishlist.length === 0) {
     return (
-      <div className="p-8 text-center ">
+      <div className="p-8 text-center mt-10">
         <h2 className="text-2xl font-bold mb-4">Wishlist bo‘sh 😢</h2>
         <p className="text-gray-500">Siz hali hech narsa qo‘shmadingiz.</p>
         <Link to="/products" className="inline-block mt-6 bg-purple-600 hover:bg-purple-700 text-white py-2 px-4 rounded-md">
