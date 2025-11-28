@@ -8,6 +8,8 @@ import Checkout from "./Components/Checkout";
 import Wishlist from "./Components/Wishlist";
 import NotFound from "./Components/NotFound";
 import Cart from "./Components/Cart.jsx";
+import Login from "./Pages/Login.jsx";
+import Register from "./Pages/Register.jsx";
 
 const Layout = ({ wishlist, setWishlist, cart, setCart }) => {
   return (
@@ -46,9 +48,15 @@ const App = () => {
         { path: "/checkout/:id", element: <Checkout /> },
         { path: "/wishlist", element: <Wishlist /> },
         { path: "*", element: <NotFound /> },
-        {path: "/cart", element: <Cart /> }
+        {path: "/cart", element: <Cart /> },
+            {
+      path: "/login",
+      element: <Login />
+    },
+    {path: "/register", element: <Register />}
       ],
     },
+    
   ]);
 
   return <RouterProvider router={router} />;

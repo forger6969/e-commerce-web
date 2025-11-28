@@ -113,13 +113,13 @@ import { Link } from "react-router-dom"; // 🔥 MUHIM
 
 const Header = ({ wishlistCount = 0, cartCount = 0 }) => {
   const { t, i18n } = useTranslation();
-
+ const user = JSON.parse(localStorage.getItem("user"));
   const changeLanguage = (lang) => {
     i18n.changeLanguage(lang);
   };
 
   return (
-    <div className="container">
+    <div className="">
 
       {/* TOP BANNER */}
       <div className="bg-black w-full py-[4px] flex justify-between px-4">
@@ -142,7 +142,8 @@ const Header = ({ wishlistCount = 0, cartCount = 0 }) => {
       </div>
 
       {/* MAIN HEADER */}
-      <div className="flex items-center justify-between mt-3">
+   <div className="container">
+       <div className="flex items-center justify-between mt-3">
 
         {/* LOGO */}
         <img src={LOgo} alt="logo" />
@@ -152,7 +153,7 @@ const Header = ({ wishlistCount = 0, cartCount = 0 }) => {
           <li className="hover:text-red-500"><Link to="/">Home</Link></li>
           <li className="hover:text-red-500"><Link to="/contact">Contact</Link></li>
           <li className="hover:text-red-500"><Link to="/about">About</Link></li>
-          <li className="hover:text-red-500"><Link to="/signup">Sign up</Link></li>
+          <li className="hover:text-red-500"><Link to="/register">Sign up</Link></li>
         </ul>
 
         {/* SEARCH + ICONS */}
@@ -185,6 +186,7 @@ const Header = ({ wishlistCount = 0, cartCount = 0 }) => {
 
         </div>
       </div>
+   </div>
 
     </div>
   );

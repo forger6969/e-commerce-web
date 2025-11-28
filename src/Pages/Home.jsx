@@ -5,7 +5,7 @@ import Sardor from '../Components/Sardor'
 const Home = () => {
   return (
     <div>
-      
+      <Sardor />
     </div>
   )
 }
